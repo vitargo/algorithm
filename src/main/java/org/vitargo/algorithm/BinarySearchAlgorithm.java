@@ -31,7 +31,7 @@ public class BinarySearchAlgorithm {
     }
 
     public static int recursively(int[] sortedArray, int key, int min, int max){
-        if(max < min) {
+        if(max < min || max == 0) {
             return -1;
         }
         int mid = min + ((max-min)/2);
